@@ -8,5 +8,5 @@ class SpindlerBattery(Battery):
         self.__current_date = current_date
 
     def needs_service(self) -> bool:
-        date_for_service = add_years(self.__last_service_date, 2)
+        date_for_service = add_years(self.__last_service_date, 3)
         return self.__current_date > date_for_service
